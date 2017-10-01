@@ -48,15 +48,15 @@ The scripts involved are as follows:
 
 ### Timeline
 
-**Over the weekend: ** I will build the skeleton of my project.  Remember how to use canvas and begin a project and I want to have real translations show up on my index.html using the api.
+**Over the weekend:** I will build the skeleton of my project.  Remember how to use canvas and begin a project and I want to have real translations show up on my index.html using the api.
 
-**Day 1: **  I will get the entry screen styled and working perfectly.  Maybe not fancy animation yet but at least all of the words and pictures where they should be and translation working perfectly.
+**Day 1:**  I will get the entry screen styled and working perfectly.  Maybe not fancy animation yet but at least all of the words and pictures where they should be and translation working perfectly.
 
-**Day 2: **  I will write the game logic and css for phase 1 and phase 2 of the game.
+**Day 2:**  I will write the game logic and css for phase 1 and phase 2 of the game.
 
-**Day 3: ** I will perfect the game logic, add logic for completing and starting again and work on styling.
+**Day 3:** I will perfect the game logic, add logic for completing and starting again and work on styling.
 
-**Day 4: **  Styling all day making it look crisp and enjoyable with a good color scheme and UX.
+**Day 4:**  Styling all day making it look crisp and enjoyable with a good color scheme and UX.
 
 
 ### Future Directions
