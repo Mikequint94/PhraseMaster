@@ -12,6 +12,20 @@ You can always ask for help and see the original list.
 
 When you have mastered the phrase in all languages you get congratulated and can do it again!
 
+
+### Wireframes
+
+Entry Screen:
+![alt text](https://res.cloudinary.com/make-anything/image/upload/v1506888703/6195006_lhz76e.png "Entry Screen")
+
+Learning Phase 1:
+![alt text](https://res.cloudinary.com/make-anything/image/upload/v1506888717/6195012_m22rto.png "Phase 1")
+
+Learning Phase 2:
+![alt text](https://res.cloudinary.com/make-anything/image/upload/v1506888731/6195020_ckt3sb.png "Phase 2")
+
+Learning Phase 3 will be very similar.
+
 ### Implementation
 
 A Google translate api will be utilized to rapidly gather the translations.
@@ -26,9 +40,11 @@ The scripts involved are as follows:
 
   `game.js` will be the starting file which calls for translation and stores the phrases and the entry screen as well as the game over logic.
 
-  `phase1.js` will be the stage of the game where the user chooses the language based on the phrase.
+  `phase1.js` will be the stage of the game where the user sees all the translations initially.
 
-  `phase2.js` will be the stage where the user types the phrase based on the language given.
+  `phase2.js` will be the stage of the game where the user chooses the language based on the phrase.
+
+  `phase3.js` will be the stage where the user types the phrase based on the language given.
 
 ### Timeline
 
