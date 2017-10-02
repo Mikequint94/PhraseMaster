@@ -17,9 +17,7 @@ When you have mastered the phrase in all languages you get congratulated and can
 In Phase Master, users will be able to:
 
 Input a custom phrase and select languages.
-
 Play through the game and get feedback on their answers
-
 Learn new things!
 
 ### Wireframes
