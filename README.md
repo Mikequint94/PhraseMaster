@@ -12,6 +12,15 @@ You can always ask for help and see the original list.
 
 When you have mastered the phrase in all languages you get congratulated and can do it again!
 
+### MVP
+
+In Phase Master, users will be able to:
+
+Input a custom phrase and select languages.
+
+Play through the game and get feedback on their answers
+
+Learn new things!
 
 ### Wireframes
 

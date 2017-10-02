@@ -1,0 +1,23 @@
+{
+  "name": "phrasemaster",
+  "version": "1.0.0",
+  "description": "PhraseMaster is an original game used to teach a user english phrases in multiple other languages.  It is easy to learn a lot of phrases in a specific language, but nowhere else is it possible to learn just one phrase but in many other languages of your choosing.  This app will teach in a fun and interactive way with multiple levels building in difficulty until you have mastered the phrase.  Also unlike other apps, you get to choose what phrase you want to learn, not just go through the default pickings of the application.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "google-translate-api": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikequint94/PhraseMaster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikequint94/PhraseMaster/issues"
+  },
+  "homepage": "https://github.com/Mikequint94/PhraseMaster#readme"
+}

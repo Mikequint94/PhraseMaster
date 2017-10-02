@@ -1,0 +1,51 @@
+input, button{ outline: 0; }
+
+canvas{
+  border: 3px solid purple;
+}
+input{
+  position: relative;
+  bottom: 447px;
+  left: 500px;
+  height: 34px;
+  width: 311px;
+}
+.language{
+  position: absolute;
+
+  width: 80px;
+  height: 80px;
+  /*background: red;*/
+  color: white;
+  font-size: 17px;
+  border-radius: 80px;
+}
+.swedish{
+  background: yellow;
+  left: 340px;
+  top: 439px;
+  color: blue;
+}
+.spanish{
+  background: red;
+  right: 600px;
+  top: 339px;
+}
+.spanish-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906560/2000px-Spanish_Presidential_Flag.svg_j9x2z4.png);
+  font-size: 0px;
+}
+.swedish-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906753/2000px-Swedish_Flag-1.svg_vgvvmx.png);
+  font-size: 0px;
+}
+.nextbutton{
+  position: absolute;
+  top: 569px;
+  left: 920px;
+  height: 30px;
+  width: 72px;
+}
+.hidden{
+  display: none;
+}
