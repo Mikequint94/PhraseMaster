@@ -4,8 +4,8 @@ canvas{
   border: 3px solid purple;
 }
 input{
-  position: relative;
-  bottom: 447px;
+  position: absolute;
+  top: 172px;
   left: 500px;
   height: 34px;
   width: 311px;
@@ -28,8 +28,25 @@ input{
 }
 .spanish{
   background: red;
-  right: 600px;
+  left: 600px;
   top: 339px;
+}
+.french{
+  background: blue;
+  left: 760px;
+  top: 469px;
+}
+.dutch{
+  background: white;
+  left: 430px;
+  color: red;
+  top: 309px;
+}
+.swahili{
+  background: green;
+  left: 200px;
+  top: 379px;
+  color: black;
 }
 .spanish-clicked{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906560/2000px-Spanish_Presidential_Flag.svg_j9x2z4.png);
@@ -39,10 +56,29 @@ input{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906753/2000px-Swedish_Flag-1.svg_vgvvmx.png);
   font-size: 0px;
 }
+.french-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928001/french-flag_wnpsrq.jpg);
+  font-size: 0px;
+}
+.swahili-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928413/1280px-Flag_of_Kenya.svg_vghqqy.png);
+  font-size: 0px;
+}
+.dutch-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928337/Flag_of_the_Netherlands_hkpyao.png);
+  font-size: 0px;
+}
 .nextbutton{
   position: absolute;
   top: 569px;
   left: 920px;
+  height: 30px;
+  width: 72px;
+}
+.backbutton{
+  position: absolute;
+  top: 569px;
+  left: 28px;
   height: 30px;
   width: 72px;
 }
