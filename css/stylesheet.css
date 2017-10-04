@@ -1,14 +1,16 @@
 input, button{ outline: 0; }
 
 canvas{
-  border: 3px solid purple;
+  border: 5px solid purple;
 }
 input{
   position: absolute;
-  top: 172px;
+  top: 168px;
   left: 500px;
-  height: 34px;
+  height: 40px;
   width: 311px;
+  font-family: Arial;
+  font-size: 34px;
 }
 .language{
   position: absolute;
@@ -94,4 +96,13 @@ input{
 }
 .hidden{
   display: none;
+}
+.phase3input{
+  position: absolute;
+  top: 345px;
+  left: 270px;
+  height: 50px;
+  width: 500px;
+  font-family: Arial;
+  font-size: 40px;
 }
