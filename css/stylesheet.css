@@ -106,3 +106,13 @@ input{
   font-family: Arial;
   font-size: 40px;
 }
+.phase3input-fail{
+  position: absolute;
+  top: 345px;
+  left: 270px;
+  height: 50px;
+  width: 500px;
+  font-family: Arial;
+  font-size: 40px;
+  color: red;
+}
