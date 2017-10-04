@@ -17,10 +17,23 @@ input{
 
   width: 80px;
   height: 80px;
-  /*background: red;*/
   color: white;
   font-size: 17px;
   border-radius: 80px;
+}
+.large{
+  position: absolute;
+  top: 210px;
+  left: 108px;
+  width: 200px;
+  height: 200px;
+  color: white;
+  border-radius: 200px;
+  font-size: 40px;
+
+}
+.large:active{
+  border-style: outset;
 }
 .swedish{
   background: yellow;
@@ -54,21 +67,42 @@ input{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906560/2000px-Spanish_Presidential_Flag.svg_j9x2z4.png);
   font-size: 0px;
 }
+.spanish-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200/v1506906560/2000px-Spanish_Presidential_Flag.svg_j9x2z4.png);
+  color: white;
+}
 .swedish-clicked{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906753/2000px-Swedish_Flag-1.svg_vgvvmx.png);
   font-size: 0px;
+}
+.swedish-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200/v1506906753/2000px-Swedish_Flag-1.svg_vgvvmx.png);
+  color: #2664ac;
 }
 .french-clicked{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928001/french-flag_wnpsrq.jpg);
   font-size: 0px;
 }
+.french-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200,w_200/v1506928001/french-flag_wnpsrq.jpg);
+  color: black;
+}
 .swahili-clicked{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928413/1280px-Flag_of_Kenya.svg_vghqqy.png);
   font-size: 0px;
 }
+.swahili-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200,w_200/v1506928413/1280px-Flag_of_Kenya.svg_vghqqy.png);
+  color: white;
+  text-shadow: 0px 0px 8px black;
+}
 .dutch-clicked{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928337/Flag_of_the_Netherlands_hkpyao.png);
   font-size: 0px;
+}
+.dutch-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200,w_200/v1506928337/Flag_of_the_Netherlands_hkpyao.png);
+  color: black;
 }
 .nextbutton{
   position: absolute;
@@ -99,20 +133,16 @@ input{
 }
 .phase3input{
   position: absolute;
-  top: 345px;
-  left: 270px;
-  height: 50px;
+  top: 350px;
+  left: 370px;
+  height: 49px;
   width: 500px;
   font-family: Arial;
   font-size: 40px;
 }
-.phase3input-fail{
-  position: absolute;
-  top: 345px;
-  left: 270px;
-  height: 50px;
-  width: 500px;
-  font-family: Arial;
-  font-size: 40px;
+.fail{
   color: red;
+}
+.success{
+  color: #10d818;
 }
