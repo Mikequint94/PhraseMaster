@@ -15,11 +15,11 @@ input{
 .language{
   position: absolute;
 
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   color: white;
-  font-size: 17px;
-  border-radius: 80px;
+  font-size: 19px;
+  border-radius: 90px;
 }
 .large{
   position: absolute;
@@ -37,34 +37,64 @@ input{
 }
 .swedish{
   background: yellow;
-  left: 340px;
-  top: 439px;
+  left: 750px;
+  top: 308px;
   color: blue;
 }
 .spanish{
   background: red;
-  left: 600px;
-  top: 339px;
+  left: 300px;
+  top: 308px;
 }
 .french{
   background: blue;
-  left: 760px;
-  top: 449px;
+  left: 450px;
+  top: 308px;
 }
 .dutch{
   background: white;
-  left: 430px;
+  left: 600px;
   color: red;
-  top: 357px;
+  top: 308px;
 }
 .swahili{
   background: green;
-  left: 200px;
-  top: 379px;
+  left: 150px;
+  top: 308px;
   color: black;
 }
+.irish{
+  background: orange;
+  left: 150px;
+  top: 425px;
+  color: green;
+}
+.italian{
+  background: white;
+  left: 300px;
+  top: 425px;
+  color: green;
+}
+.german{
+  background: black;
+  left: 450px;
+  top: 425px;
+  color: red;
+}
+.maori{
+  background: red;
+  left: 600px;
+  top: 425px;
+  color: black;
+}
+.afrikaans{
+  background: green;
+  left: 750px;
+  top: 425px;
+  color: white;
+}
 .spanish-clicked{
-  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906560/2000px-Spanish_Presidential_Flag.svg_j9x2z4.png);
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100/v1506906560/2000px-Spanish_Presidential_Flag.svg_j9x2z4.png);
   font-size: 0px;
 }
 .spanish-large{
@@ -72,7 +102,7 @@ input{
   color: white;
 }
 .swedish-clicked{
-  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80/v1506906753/2000px-Swedish_Flag-1.svg_vgvvmx.png);
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100/v1506906753/2000px-Swedish_Flag-1.svg_vgvvmx.png);
   font-size: 0px;
 }
 .swedish-large{
@@ -80,7 +110,7 @@ input{
   color: #2664ac;
 }
 .french-clicked{
-  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928001/french-flag_wnpsrq.jpg);
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100,w_100/v1506928001/french-flag_wnpsrq.jpg);
   font-size: 0px;
 }
 .french-large{
@@ -88,7 +118,7 @@ input{
   color: black;
 }
 .swahili-clicked{
-  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928413/1280px-Flag_of_Kenya.svg_vghqqy.png);
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100,w_100/v1506928413/1280px-Flag_of_Kenya.svg_vghqqy.png);
   font-size: 0px;
 }
 .swahili-large{
@@ -97,12 +127,56 @@ input{
   text-shadow: 0px 0px 8px black;
 }
 .dutch-clicked{
-  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_80,w_80/v1506928337/Flag_of_the_Netherlands_hkpyao.png);
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100,w_100/v1506928337/Flag_of_the_Netherlands_hkpyao.png);
   font-size: 0px;
 }
 .dutch-large{
   background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200,w_200/v1506928337/Flag_of_the_Netherlands_hkpyao.png);
   color: black;
+}
+.irish-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100,w_100/v1507182885/ie_qmdf23.gif);
+  font-size: 0px;
+}
+.irish-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200,w_200/v1507182885/ie_qmdf23.gif);
+  color: white;
+  text-shadow: 0px 0px 8px orange;
+}
+.italian-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,g_center,h_100,w_100/v1507181144/21cWPlKRcQL._SX355__xw8plb.jpg);
+  font-size: 0px;
+}
+.italian-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,g_center,h_200,w_200/v1507181144/21cWPlKRcQL._SX355__xw8plb.jpg);
+  color: black;
+  text-shadow: 0px 0px 8px white;
+}
+.german-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_100,w_100/v1507181187/1200px-Flag_of_Germany.svg_l5vlm7.png);
+  font-size: 0px;
+}
+.german-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200,w_200/v1507181187/1200px-Flag_of_Germany.svg_l5vlm7.png);
+  color: black;
+}
+.maori-clicked{
+  background-image: url(http://res.cloudinary.com/make-anything/image/upload/c_crop,g_east,h_278,w_433,x_108/c_scale,h_100,w_100/v1507181223/maori-national-flag_pvj0qy.gif);
+  font-size: 0px;
+}
+.maori-large{
+  background-image: url(http://res.cloudinary.com/make-anything/image/upload/c_crop,g_east,h_278,w_433,x_108/c_scale,h_200,w_200/v1507181223/maori-national-flag_pvj0qy.gif);
+  color: white;
+  text-shadow: 0px 0px 8px black;
+}
+.afrikaans-clicked{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,g_west,h_100,w_100/v1507181353/za_ub5ern.png);
+  font-size: 0px;
+}
+.afrikaans-large{
+  background-image: url(https://res.cloudinary.com/make-anything/image/upload/c_scale,g_west,h_200,w_200/v1507181353/za_ub5ern.png);
+  color: white;
+  text-shadow: 0px 0px 8px black;
 }
 .nextbutton{
   position: absolute;
