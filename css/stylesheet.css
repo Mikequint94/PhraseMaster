@@ -32,6 +32,18 @@ input{
   font-family: Arial;
   font-size: 34px;
 }
+#answer-list{
+  position: relative;
+  bottom: 520px;
+  left: 690px;
+  font-size: 2.6em;
+
+  color: cyan;
+}
+#answer-list div{
+  padding-top: 30px;
+  font-family: Arial;
+}
 .logo{
   position: absolute;
   left: 25px;
