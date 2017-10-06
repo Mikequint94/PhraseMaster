@@ -1,22 +1,80 @@
 input, button{ outline: 0; }
+*{
+  font-family: "Nexa Bold";
+}
 
 canvas{
   border: 5px solid purple;
+  position: absolute;
+  bottom: 64px;
+  z-index: -1;
+  width: 1000px;
+  /*width: calc(100vw - 25px);*/
+  /*max-width: 1000px;*/
+  border-top: 5px solid #ac3050;
+}
+body{
+  background: black;
 }
 input{
-  position: absolute;
-  top: 168px;
-  left: 500px;
+  /*position: absolute;
+  bottom: 470px;
+  left: 500px;*/
   height: 40px;
   width: 311px;
   font-family: Arial;
   font-size: 34px;
 }
-.language{
+.findus{
+  width: 100%;
+  max-width: calc(100vw - 25px);
+  height: 50px;
+  background: #ac3050;
+  float: left;
+  padding-left: 10px;
+  padding-top: 8px;
+  margin-top: 15px;
+  font-family: sans-serif;
   position: absolute;
-
+  bottom: 0px;
+}
+.findus h2{
+  margin: 0px;
+  width: 100px;
+  padding-right: 47px;
+  padding-top: 4px;
+}
+.findus p{
+  margin: 3px;
+  position: relative;
+  top: -2px;
+  height: 18px;
+  color: black;
+  font-size: 1.2em;
+  padding-top: 4px;
+}
+.findus a img{
+  height: 30px;
+  width: auto;
+}
+.findus a {
+  display: flex;
+  padding-right: 23px;
+}
+.floatright{
+  display: flex;
+  float: right;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+.language{
+  /*position: absolute;*/
+  /*width: 10vw;
+  height: 10vw;*/
   width: 100px;
   height: 100px;
+  /*max-width: 100px;
+  max-height: 100px;*/
   color: white;
   font-size: 19px;
   border-radius: 90px;
@@ -178,10 +236,76 @@ input{
   color: white;
   text-shadow: 0px 0px 8px black;
 }
-.nextbutton{
+.backnext{
+  max-width: 975px;
   position: absolute;
-  top: 569px;
-  left: 920px;
+  bottom: 44px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 50px);
+  height: 50px;
+  padding: 18px;
+}
+/*@media screen and (max-width: 1025px) {
+  .inputsection {
+    /*max-width: 975px;*/
+    /*position: absolute;
+    left:  47vw;
+    bottom: 44vw;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 50px);
+    height: 50px;
+    padding: 18px;
+  }
+}*/
+/*@media screen and (min-width: 1024px) {*/
+  .inputsection {
+  max-width: 975px;
+  position: absolute;
+  bottom: 514px;
+  left: 489px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 50px);
+  height: 50px;
+  padding: 18px;
+  }
+/*}*/
+.chooselang1{
+  /*max-width: 810px;*/
+  position: absolute;
+  bottom: 110px;
+  display: flex;
+  justify-content: space-around;
+  /*width: calc(100vw - 215px);*/
+  /*height: calc(((100vw - 215px) / 4.5) + 57px);*/
+  /*max-height: 240px;*/
+  height: 240px;
+  width: 810px;
+  padding-left: 100px;
+  padding: 20px;
+  left: 87px;
+}
+.chooselang2{
+  /*max-width: 810px;*/
+  width: 810px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  /*width: calc(100vw - 215px);*/
+  /*height: calc(((100vw - 215px) / 4.5) + 57px);*/
+  /*max-height: 235px;*/
+  height: 235px;
+  padding-left: 100px;
+  padding: 20px;
+  left: 87px;
+}
+.nextbutton{
+  /*position: absolute;
+  bottom: 83px;
+  right: calc(28px + (100vw - 1000px));*/
   height: 30px;
   width: 72px;
   background: cyan;
@@ -191,9 +315,9 @@ input{
   font-size: 16px;
 }
 .backbutton{
-  position: absolute;
-  top: 569px;
-  left: 28px;
+  /*position: absolute;
+  bottom: 83px;
+  left: 28px;*/
   height: 30px;
   width: 72px;
   background: #ff528d;
