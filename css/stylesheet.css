@@ -81,8 +81,8 @@ input{
 }
 .large{
   position: absolute;
-  top: 210px;
-  left: 108px;
+  top: 285px;
+  left: 118px;
   width: 200px;
   height: 200px;
   color: white;
@@ -331,8 +331,8 @@ input{
 }
 .phase3input{
   position: absolute;
-  top: 350px;
-  left: 370px;
+  top: 252px;
+  left: -122px;
   height: 49px;
   width: 500px;
   font-family: Arial;
