@@ -1,50 +1,41 @@
-![alt text](https://res.cloudinary.com/make-anything/image/upload/v1505856907/Logo_Make_Anything_poheza.png "MakeAnything Logo")
+![alt text](https://res.cloudinary.com/make-anything/image/upload/v1507229621/PMLogopxlr2_fcqdqr.png "PhraseMaster Logo")
 
 
 Brief Overview
 ==
 
-MakeAnything is a DIY project instruction site focusing on ease of use and sleek design.  Users can easily browse or search for projects and gain instant access to detailed instructions on how to Make Anything.  
-####   [MakeAnything App](https://make-anything-app.herokuapp.com "MakeAnything")
+PhraseMaster is an original game used to teach a user a single phrase in multiple other languages. It is easy to learn a lot of phrases in a specific language, but nowhere else is it possible to learn multiple translations simultaneously. This app teaches in a fun and interactive way with multiple levels building in difficulty until you have mastered the phrase.  Unlike other apps, you get to choose what you want to learn.
+
+####   [Phrase Master](https://www.phrasemaster.fun/ "PhraseMaster")
 
 
-This full stack web application was inspired by the functionality of Instructables.com.  It was crafted using Ruby on Rails for the backend and React with a Redux architectural framework for the frontend.  The app utilizes a PostgreSQL database, and benefits from advanced performance with the addition of BCrypt, JBuilder, React-Dropzone, and Cloudinary CDN services.
+This web application was crafted using Canvas and vanilla JavaScript, with translation data served from Google Cloud Translation API.
 
 
 
 Design
 ==
 
-MakeAnything was designed with user experience in mind.  The site is fun to navigate, and returns desired results.
+PhraseMaster was designed to be simple.  3 Stages of simple learning followed by a final quiz at the end.  You must master each step to continue which forces you to really learn.   
 
-![alt text](https://res.cloudinary.com/make-anything/image/upload/c_scale,h_540/v1506715231/Screen_Shot_2017-09-29_at_12.59.51_PM_byuxgc.png "Splash Page")
+![alt text](http://res.cloudinary.com/make-anything/image/upload/c_scale,h_540/v1507313743/Screen_Shot_2017-10-06_at_11.13.26_AM_mugzd3.png "Selection Stage")
 
-The splash homepage was a challenge in many senses.  Not only did I want the desired parallax scroll effect, but also I wanted the background image to be a slideshow.  Finally I wanted text on top of each image to give examples of project categories.  Creating the parallax scroll effect on the homepage was challenging in its own sense, but I figured out that wrapping all of my elements with appropriate CSS kept the site functional and stylish on all pages.    I used a simple timer to advance the background image, but timing was a challenge since I had to pair the text with the image perfectly.  
+I embraced the challenge of using canvas for the text and quiz elements of the game.  Rather than using HTML do design the layout of the page, I used canvas properties for printing and click handling.  This presented a lot of math challenges with alignment and mouse positioning.  
 
-By utilizing class and timers I was able to craft the perfect solution.  
+Different languages contain different symbols and letters which would make accurately answering the questions impossible.  To solve this problem I created my own replaceAll function to allow the user to type the foreign letter or an english equivalent and be correct either way.  This also lets the user respond with a case insensitive response and omit punctuation.
 
 ```javascript
-dummyInput(string, idx){
-    let dummyText = Array.from(string);
-    this.setState({text: ""});
-    this.clearInterval = setInterval(() => {
-      if (dummyText.length) {
-        this.setState({text: this.state.text + dummyText.shift()});
-      } else {
-        clearTimeout(this.clearInterval);
-        if (idx === 0) {
-          this.bgclass="section parallax bg3";
-          this.dummyInput("Woodwork   ", 1);
-        } else if (idx === 1) {
-          this.bgclass="section parallax bg1";
-          this.dummyInput("Artwork      ", 2);
-        } else {
-          this.bgclass="section parallax bg2";
-          this.dummyInput("Cooking      ", 0);
-        }
-      }
-    }, 300);
-}
+String.prototype.replaceAll = function(target, replacement) {
+  let phrase = this;
+  for (let i=0; i< target.length; i++) {
+    phrase = phrase.split(target[i]).join(replacement[i]);
+  }
+  return phrase;
+};
+
+let phraseLowerNoAccent = this.phrase.toLowerCase()
+.replaceAll(["ö","å","ä","æ","ø","ç","é","â","ê","î","ô","û","à","è","ù","ë","ï","ü","á","í","ó","ú","ñ","¿","¡",".","!","?"],
+            ["o","a","a","ae","o","c","e","a","e","i","o","u","a","e","u","e","i","u","a","i","o","u","n","","","","",""]);
 ```
 Additionally, all the forms are styled to match.  Logged in visitors can create new projects, add steps for the project, edit projects, edit steps, and add comments to any existing project.  
 ![alt text](https://res.cloudinary.com/make-anything/image/upload/c_scale,h_540/v1506718182/MakeAnythingFormFeatures_h3dsu6.jpg
