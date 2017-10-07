@@ -37,63 +37,29 @@ let phraseLowerNoAccent = this.phrase.toLowerCase()
 .replaceAll(["ö","å","ä","æ","ø","ç","é","â","ê","î","ô","û","à","è","ù","ë","ï","ü","á","í","ó","ú","ñ","¿","¡",".","!","?"],
             ["o","a","a","ae","o","c","e","a","e","i","o","u","a","e","u","e","i","u","a","i","o","u","n","","","","",""]);
 ```
-Additionally, all the forms are styled to match.  Logged in visitors can create new projects, add steps for the project, edit projects, edit steps, and add comments to any existing project.  
-![alt text](https://res.cloudinary.com/make-anything/image/upload/c_scale,h_540/v1506718182/MakeAnythingFormFeatures_h3dsu6.jpg
-"Form Features")
 
 Functionality
 ==
 
-MakeAnything features search to filter projects by title.  I was able to combine this component with the page showing all projects by a single crafter.  Here is an example of a typical user going through the site and leaving a comment.
+After choosing a phrase and languages to learn, the user is shown a dictionary of the phrases to start studying prior to the game.  The user then must pass 3 levels before he/she becomes a PhraseMaster.
 
-![alt text](https://res.cloudinary.com/make-anything/image/upload/v1506721204/giphy_uneqcu.gif
-  "Search")
+Level 1: Given the phrase, the user must choose the correct language.
 
-Since this is a single page application, it was difficult to maintain similar visual feel across components.  I achieved consistency and non-repetitive code by using conditional statements to set visibility and content of subcomponents based on factors such as logged in user, project author, and the type of media present in the step or project.
-````javascript
-return(
-  <div className="projectshow">
-    <ul className="header">
-      <li className="steps-edit">
-        {editproject}
-      </li>
-      <li className={titleclass}>{project.title}</li>
-      <li className={authorclass}>by:
-        <Link to={`/member/${project.author.id}/${project.author.username}/projects`}>  {project.author.username}</Link>
-      </li>
-    </ul>
-    <ul className="pictextvid">
-      {image}
-      <h2>{project.description}</h2>
-      {video}
-    </ul>
-    <ul className="steps">
-      {steps}
-      <br/>
-      {addSteps}
-    </ul>
-    <div className="comment-form">
-      {comments}
-      <CommentIndexContainer />
-    </div>
-  </div>
-);
-} else {
-  return(
-    <div className="loadingtext">
-      <h3>Loading</h3>
-    </div>
-  );
-  ````
+Level 2: The user must speak the phrase out loud and then type in the phrase they are shown.  This helps the user learn to prepare for the final step.
+
+Level 3:  Given just the language, the user must type out the phrase.  Once this is perfected, the user has officially reached their goal and learned!
+
+![alt text](https://res.cloudinary.com/make-anything/image/upload/v1507363550/giphy_sghtbv.gif
+  "Sample Game")
 
 Future Directions
 ==
 
-**Keywords and Categories:**
-Searching by project title is cool, but searching by keyword is even better!  All projects will be tagged with relevant keywords to allow for improved search.  There will also be a list of categories a user can view and select from for inspiration.
+**Speech:**
+Being able to learn new phrases visually is cool, but hearing the phrase to master pronunciation would make this app even more powerful!
 
-**Enhanced User Interactions:**
-Users can view each others projects and leave comments, but what if they want more?  Future updates will add more information to user's profile.  Users will be able to like projects, follow other users, and direct message users with private questions or with requests for collaboration.
+**Conversion from Canvas to HTML Elements:**
+Although I learned a lot about canvas creating this app, I think it would be simpler and more adaptable if I created the text elements as HTML elements rather than Canvas drawings on the screen.
 
- ![alt text](https://res.cloudinary.com/make-anything/image/upload/c_scale,w_115/v1506614644/Logo_Make_Anything_Robot_blackicon_a9hmif.png
- "MakeAnything Logo") **[MakeAnything App](https://make-anything-app.herokuapp.com "MakeAnything")**
+ ![alt text](https://res.cloudinary.com/make-anything/image/upload/c_scale,h_200/v1507274657/PMLogopxlrSquare3_tuwsca.png
+ "PhraseMaster Logo")   **[PhraseMaster](https://Phrasemaster.fun "PhraseMaster")**
